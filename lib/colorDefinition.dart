@@ -5,7 +5,7 @@ Color randomColor = getRandomColor();
 Color fontColor = getFontColor();
 
 Color getRandomColor() =>
-    Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0);
+    Color((Random().nextInt(999999) * 0xFFFFFF)).withOpacity(1.0);
 //random color geretaion using Random class
 
 Color getFontColor() {
